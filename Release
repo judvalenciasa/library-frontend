@@ -1,0 +1,22 @@
+Realizar la siguiente prueba
+
+Objetivo 
+Crear una aplicación web que permita al usuario ingresar una ubicacion y obtener el clima actual de esa área utilizando la API de Openweathermap. La prueba se realizará con HTML, JavaScript y Css.
+
+Requisitos
+Interfaz de Usuario:
+    Un campo de entrada para que el usuario ingrese el nombre de la ciudad.
+    Un botón para enviar la consulta.
+    Un área para mostrarlos resultados del clima (temperatura, condiciones metereológicas, humedad, etc...).
+    Manejo de errores para situaciones como ciudad no encontrada.
+
+API de clima:
+    Utilizar la API de OpenWeatherMap (https://openweathermap.org/api) para obterner los datos metereológicos.
+    Necesitarás registrarte y obtener una clave de API.
+
+Funciones: 
+    Hacer una llamada a la API al enviar el formulario.
+    Procesar la respuest y mostrar los datos en la interfaz de usuario.
+
+
+    Api=1ab52303f6739a2ece6263c1b8e1c5b3

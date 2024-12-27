@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Libros</title>
+    <link rel="stylesheet" href="../css/styles_administracion.css">
+</head>
+
+<body>
+    <session>
+        <div class="navar">
+            <ul>
+                <li><a href="../index.html">Catalogo</a></li>
+                <li><a href="#">Administrar catalogo</a></li>
+            </ul>
+        </div>
+    </session>
+
+    <div class="container">
+        <h1 id="titulo">Administración de Libros</h1>
+        <section class="metodos">
+            <div class="adicion-head"></div>
+            <h2>Añadir un Libro</h2>
+            <form id="adicion-book-form" class="form">
+                <label for="addTitle">Título</label>
+                <input type="text" id="addTitle" name="title" required>
+                <label for="addAuthor">Autor</label>
+                <input type="text" id="addAuthor" name="author" required>
+                <label for="addGenre">Género</label>
+                <input type="text" id="addGenre" name="genre" required>
+                <label for="addCategory">Categoría</label>
+                <input type="text" id="addCategory" name="category" required>
+                <label for="addYear">Fecha de publicación</label>
+                <input type="date" id="addYear" name="year" required>
+                <button type="submit">Añadir Libro</button>
+            </form>
+        </section>
+
+        <section class="metodos">
+            <h2>Actualizar un Libro</h2>
+            <form id="update-book-form" class="form">
+                <label for="updateId">Código del libro</label>
+                <input type="text" id="updateId" name="id" required>
+                <label for="updateTitle">Título</label>
+                <input type="text" id="updateTitle" name="title" required>
+                <label for="updateAuthor">Autor</label>
+                <input type="text" id="updateAuthor" name="author" required>
+                <label for="updateGenre">Género</label>
+                <input type="text" id="updateGenre" name="genre" required>
+                <label for="updateCategory">Categoría</label>
+                <input type="text" id="updateCategory" name="category" required>
+                <label for="updateYear">Fecha de publicación</label>
+                <input type="date" id="updateYear" name="year" required>
+                <button type="submit">Actualizar Libro</button>
+            </form>
+        </section>
+
+        <section class="metodos">
+            <h2>Borrar un Libro</h2>
+            <form id="delete-book-form" class="form">
+                <label for="deleteId">Código</label>
+                <input type="text" id="deleteId" name="id" required>
+                <button type="submit">Borrar Libro</button>
+            </form>
+        </section>
+    </div>
+
+
+    <session class="footer">
+        <div class="footer-content">
+            <p>© 2021 Todos los derechos reservados Juan David Valencia</p>
+        </div>
+    </session>
+
+    <script src="../js/administracion.js"></script>
+</body>
+
+</html>

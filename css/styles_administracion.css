@@ -1,0 +1,108 @@
+/* Estilos para la página de administración */
+.navar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.navar ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+.navar ul li a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+
+body .container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.navar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#titulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.metodos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metodos .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metodos .form label{
+    margin:5px;
+}
+
+.metodos .form input{
+    width: 80%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+button{
+    width: 30%;
+    padding: 10px;
+    background-color: #3775b6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
