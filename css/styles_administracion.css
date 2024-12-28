@@ -15,6 +15,9 @@
     color: #fff; 
 }
 
+body{
+    height: 100%;
+}
 
 body .container{
     display: flex; 
