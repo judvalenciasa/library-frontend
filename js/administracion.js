@@ -138,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             alert('Libro borrado exitosamente.');
             console.log('Libro borrado:', data);
+            limpiarCampos();
+            redirigirAPaginaPrincipal();
         })
         .catch(error => {
             console.error('Error:', error);
