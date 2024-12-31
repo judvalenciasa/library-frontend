@@ -1,22 +1,16 @@
-Realizar la siguiente prueba
-
-Objetivo 
-Crear una aplicación web que permita al usuario ingresar una ubicacion y obtener el clima actual de esa área utilizando la API de Openweathermap. La prueba se realizará con HTML, JavaScript y Css.
-
-Requisitos
-Interfaz de Usuario:
-    Un campo de entrada para que el usuario ingrese el nombre de la ciudad.
-    Un botón para enviar la consulta.
-    Un área para mostrarlos resultados del clima (temperatura, condiciones metereológicas, humedad, etc...).
-    Manejo de errores para situaciones como ciudad no encontrada.
-
-API de clima:
-    Utilizar la API de OpenWeatherMap (https://openweathermap.org/api) para obterner los datos metereológicos.
-    Necesitarás registrarte y obtener una clave de API.
-
-Funciones: 
-    Hacer una llamada a la API al enviar el formulario.
-    Procesar la respuest y mostrar los datos en la interfaz de usuario.
-
-
-    Api=1ab52303f6739a2ece6263c1b8e1c5b3
+app:
+    name: Biblioteca Frontend
+    description: >
+        Esta aplicación es una interfaz de usuario para gestionar una biblioteca de libros. 
+        Permite a los usuarios buscar, agregar, editar y eliminar libros de la colección. 
+        La aplicación está diseñada para ser intuitiva y fácil de usar, proporcionando una 
+        experiencia de usuario fluida y eficiente.
+    features:
+        - Búsqueda de libros por título, autor o género
+        - Agregar nuevos libros a la colección
+        - Editar información de libros existentes
+        - Eliminar libros de la colección
+    technologies:
+        - HTML
+        - CSS
+        - JavaScript
