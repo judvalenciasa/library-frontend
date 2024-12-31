@@ -5,6 +5,25 @@ document.addEventListener('DOMContentLoaded', function() {
     myHeaders.append("Accept", "application/json");
     
 
+    function limpiarCampos() {
+        document.getElementById('addTitle').value = '';
+        document.getElementById('addAuthor').value = '';
+        document.getElementById('addYear').value = '';
+        document.getElementById('addGenre').value = '';
+        document.getElementById('addCategory').value = '';
+        document.getElementById('updateTitle').value = '';
+        document.getElementById('updateAuthor').value = '';
+        document.getElementById('updateYear').value = '';
+        document.getElementById('updateGenre').value = '';
+        document.getElementById('updateCategory').value = '';
+        document.getElementById('updateId').value = '';
+        document.getElementById('deleteId').value = '';
+    }
+
+    function redirigirAPaginaPrincipal() {
+        window.location.href = '../index.html';
+    }
+
     // Función para añadir un libro
     document.getElementById('adicion-book-form').addEventListener('submit', function(event) {
         function formatDate(dateString) {
@@ -42,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('Libro añadido:', data);
             alert('Libro añadido exitosamente.');
+            limpiarCampos();
+            redirigirAPaginaPrincipal();
         })
         .catch(error => {
             console.error('Error:', error);
@@ -88,6 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('Respuesta del servidor:', data);
             alert('Libro actualizado exitosamente.');
+            limpiarCampos();
+            redirigirAPaginaPrincipal();
         })
         .catch(error => {
             console.error('Error:', error);
@@ -115,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             alert('Libro borrado exitosamente.');
             console.log('Libro borrado:', data);
+            limpiarCampos();
+            redirigirAPaginaPrincipal();
         })
         .catch(error => {
             console.error('Error:', error);
